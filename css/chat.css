@@ -1,6 +1,7 @@
 .header-wrapper{
     position: fixed;
     width: 100%;
+    background-color: white;
     padding: 0px 18px;
     top:15px;
     left: 0px;
@@ -17,7 +18,7 @@
 .chat__messages{
     width: 100%;
     padding-top: 130px;
-    min-height: 1000vh;
+    min-height: 1000px;
     background-image: url(../images/3.png);
     background-size: contain;
     background-attachment: fixed;
