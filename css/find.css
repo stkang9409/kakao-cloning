@@ -1,0 +1,39 @@
+.find__header-list{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.find__header-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.header-btn__icon{
+    margin-bottom: 20px;
+}
+
+.header-btn__title{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.find__recommended{
+    margin-top: 15px;
+    border-top: 1px solid rgba(0, 0, 0, 0.137);
+    padding-top: 15px;
+}
+
+.find__title{
+    padding-bottom: 15px;
+}
+
+.friend__add-btn{
+    padding: 10px 13px;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.082);
+}

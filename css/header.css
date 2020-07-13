@@ -1,0 +1,28 @@
+.header{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background-color: white;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__header-column{
+    font-size: 25px;
+    color: balck;
+    opacity: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.header__header-column a{
+    margin-right: 20px;
+}
+.header__title{
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.header__icon{
+    margin-left: 20px;
+}

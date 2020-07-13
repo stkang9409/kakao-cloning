@@ -1,0 +1,13 @@
+.settings__sections{
+    border-top: 1px solid rgba(0, 0, 0, 0.137);
+    padding: 10px;
+}
+
+.settings__setting{
+    margin: 20px 0px;
+}
+
+.settings__title{
+    margin-left: 30px;
+    font-size: 20px;
+}

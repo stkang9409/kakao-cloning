@@ -1,0 +1,22 @@
+.status-bar{
+    width: 100%;
+    padding: 10px 20px;
+    background-color: white;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+}
+
+.status-bar__column{
+    font-size: 18px;
+    color: balck;
+    opacity: 80%;
+}
+
+.status-bar__column:first-child{
+    opacity: 60%;
+}

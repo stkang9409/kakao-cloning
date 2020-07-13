@@ -1,0 +1,83 @@
+.friend{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.friends__plus{
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.137);
+}
+
+.friends__list{
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.137);
+}
+
+.friend__avatar{
+    height: 50px;
+}
+
+.g-avatar.friend__avatar.lg{
+    height: 70px;
+}
+
+.g-avatar.friend__avatar.m{
+    height: 60px;
+}
+
+.friends__title{
+    font-size: 15px;
+    opacity: 70%;
+    margin-bottom: 15px;
+}
+.friend--lg{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.friend__column{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.friend__column.column{
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.friend__content{
+    font-size: 12px;
+    opacity: 70%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.friend__content span{
+    margin-top: 10px;
+}
+
+.friend__name{
+    font-size: 15px;
+    font-weight: 600;
+    opacity: 100%;
+}
+
+.friend__now-listening{
+    padding: 5px 10px;
+    border: 2px solid rgb(1, 248, 112);
+    border-radius: 20px;
+    opacity: 50%;
+}
+.g-avatar.friend__avatar{
+    margin-right: 15px;
+}
