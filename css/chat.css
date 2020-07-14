@@ -6,12 +6,26 @@
     top:15px;
     left: 0px;
     box-shadow: 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+    z-index: 1;
+}
+
+@keyframes spin{
+    0% {
+        transform: none;
+    }
+    50%{
+        transform: rotateY(1turn);
+    }
+    100% {
+        transform: none;
+    }
 }
 
 .message__avatar{
     height: 40px;
     border-radius: 50%;
     margin-right: 15px;
+    animation: spin 3s infinite linear;
 }
 
 
@@ -35,6 +49,8 @@
     padding: 5px 10px;
     margin-bottom: 30px;
     box-shadow: 0 18px 36px -18px rgba(0, 0, 0, 0.521), 0 -12px 36px -8px rgba(0, 0, 0, 0.349);
+    transform: translateY(40px);
+    animation: show 0.5s ease-in-out forwards;
 }
 
 .incoming-message{
@@ -83,23 +99,58 @@
 }
 .chat__write--container{
     width: 100%;
-    background-color: #fcfcfc;
-    padding: 20px 0px;
     position: fixed;
     left: 0px;
     bottom: 0px;
-    border-top: 1px solid #f7f7f7;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .chat__write{
-    width: 80%;
+    width: 100%;
+    height: 100%;
+    padding:20px 40px;
     border: none;
+    border-top: 1px solid #f7f7f7;
     margin: 0 auto;
     outline: none;
     display: flex;
+    background-color: #d3d3d3;
+    transition: all 0.5s ease-in-out;
+}
+
+.chat__write::placeholder{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+.chat__write:focus{
+    transform: translateY(-100px);
+    border-radius: 40px;
+    width: 70%;
+    animation: float 1s linear infinite;
+}
+
+@keyframes float{
+    0%{
+        box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.521);
+    }
+
+    50%{
+        box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.685);
+    }
+
+    100%{
+        box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.521);
+    }
+}
+.chat__write:focus~.chat__icon{
+    opacity: 0%;
+}
+.chat__icon{
+    color: black;
+    transition: opacity 0.5s ease-in-out;
 }
 .chat__icon-left {
     position: absolute;
@@ -110,3 +161,35 @@
     position: absolute;
     right: 10px;
   }
+
+  @keyframes showIncomingMessage{
+    from {
+        transform: translateX(-40px) translateY(40px);
+        opacity: 0%;
+    }
+    to {
+        transform: none;
+        opacity: 100%;
+      }
+  }
+
+.incoming-message{
+    transform: translateX(-40px) translateY(40px);
+    animation: showIncomingMessage 0.5s ease-in-out forwards;
+}
+
+@keyframes showSentMessage{
+    from {
+        transform: translateX(40px) translateY(40px);
+        opacity: 0%;
+    }
+    to {
+        transform: none;
+        opacity: 100%;
+      }
+  }
+
+.sent-message{
+    transform: translateX(40px) translateY(40px);
+    animation: showSentMessage 0.5s ease-in-out forwards;
+}

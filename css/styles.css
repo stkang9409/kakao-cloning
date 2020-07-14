@@ -56,3 +56,40 @@ a {
   align-items: center;
   justify-content: center;
 }
+
+@keyframes show{
+  from {
+      transform: translateY(40px);
+      opacity: 0%;
+  }
+  to {
+      transform: none;
+      opacity: 100%;
+    }
+}
+.chats{
+  transform: translateY(40px);
+  animation: show 0.5s ease-in-out forwards;
+}
+
+.bg-screen{
+  position: absolute;
+  top:0px;
+  left:0px;
+  height: 100%;
+  width:100%;
+  background-color: rgb(255, 217, 0);
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 4;
+}
+
+@media screen and (min-width: 550px){
+  .bg-screen{
+    display: flex;
+  }
+}

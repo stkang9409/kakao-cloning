@@ -1,3 +1,8 @@
+.more{
+    transform: translateY(40px);
+    animation: show 0.5s ease-in-out forwards;
+}
+
 .more__btn-list{
     display: flex;
     align-items: center;

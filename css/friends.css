@@ -4,6 +4,10 @@
     justify-content: flex-start;
 }
 
+.friends{
+    transform: translateY(40px);
+    animation: show 0.5s ease-in-out forwards;
+}
 .friends__plus{
     margin-top: 20px;
     padding-top: 20px;
